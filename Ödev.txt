@@ -1,0 +1,29 @@
+buyukharfler = "ASDFGHJKLŞİZXCVBNMÖÇQWERTYUIOPĞÜ"
+kucukharfler = "asdfghjklşizxcvbnmöçqwertyuıopğü"
+rakamlar = "0123456789"
+ozelkarakter =".,-?*"
+
+bharf=0
+kharf=0
+rsay=0
+oksayısı=0
+
+sifre=input("Lütfen Şifre Giriniz")
+
+for kntrl in sifre:
+    if kntrl in buyukharfler:
+        bharf+=1
+    if kntrl in kucukharfler:
+        kharf+=1
+    if kntrl in rakamlar:
+        rsay+=1
+    if kntrl in ozelkarakter:
+        oksayısı+=1
+
+if bharf>0 and kharf>0 and rsay>0 and oksayısı>0:
+    print("Şifreniz Güvenli")
+    print("Buyukharfler: "+str(bharf)+"\nKucukharfler: "+str(kharf)+"\nRakamlar: "+str(rsay)+"\nOzelkarakterler: "+str(oksayısı))
+else:
+    print("Buyukharfler: "+str(bharf)+"\nKucukharfler: "+str(kharf)+"\nRakamlar: "+str(rsay)+"\nOzelkarakterler: "+str(oksayısı))
+    print("Şifreniz Güvensiz")
+
