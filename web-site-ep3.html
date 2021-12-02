@@ -10,8 +10,8 @@
     <style type="text/css">
        
         body {
-          background-image:
-          url('https://i.hizliresim.com/diqfpuh.jpg');">
+         <!--Burada istediğimizi koyuyoruz ama arka planı temizleyip doğru bir sayfa olması için kaldırıyorum  background-image:
+          url('https://i.hizliresim.com/diqfpuh.jpg');"> -->
           margin: 0;
           padding: 0;
           font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -20,14 +20,14 @@
       }
       div {
           width: 1120px;
-          margin: 13.4em auto;
+          margin: 11em auto;
           padding: 10em;
           background-color: hsla(34, 100%, 50%, 0);
           border-radius: 0.5em;
           box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
       }
       a:link, a:visited {
-          color: #ffffff;
+          color: #000000;
           text-decoration: none;
       }
       @media (max-width: 700px) {
@@ -38,11 +38,45 @@
       }
     </style>
   </head>
+  
+  <!--Buraya Sitede işe yaramayacak ama diğer türlü bir tablo oluşturmamız gerektiğinde işe yarayacak kod dizisi bırakıyorum
+  
+  <table border="1" width="100%" > 
+
+  <tr>
+   <td>2</td>
+   <td>Kalem</td>
+   <td>25tl</td>
+   <td>kalem.jpeg</td>
+  </tr>
+  <tr>
+<td>4</td>
+<td>Silgi</td>
+<td>15tl</td>
+<td>silgi.jpeg</td>
+  </tr>
+  <tr>
+<td>3</td>
+<td>Defter</td>
+<td>50tl</td>
+<td>defter.jpeg</td>    
+  </tr>
+
+
+
+  </table>
+  
+  
+  -->
 
   <body>
-    <div>
+    <!--Header etiketini kullandık bir blogger sayfası yapıyormuş gibi başlığı sağ üstten başlatıyor bu tarz başlıkları nereden nasıl başlamasını istiyorsanız uygun bir link
+    bırakıyorum https://www.w3schools.com/html/html5_semantic_elements.asp bu link üzerindsen şematik şekilde nerede nasıl duracağını anlayabilirsiniz -->
+    <header>
       
       <h1>Hakkımda</h1> 
+
+      
       
       <p style="color: rgb(23, 4, 34);">
         <!-- Burda Strong  olarak belirttiğim yerleri eski projemle kıyaslarsanız belirtilmesi için kalın şekillerde boyanmış önemli yerler olduğunu anlarsınız -->
@@ -52,8 +86,15 @@
         github profilime erişebilir yaptığım kodlamlar hakkında yorum veya
         destek olabilirsiniz
       </p>
+      <!-- Aşşğıda bulunan ul ile bir alan oluşturdum altında istediğim yazıları alt alta listeleyerek sıralama yapılabilir hale getirdim.-->
+      <!-- Ul etiketinin içerisinde style eklediğimiz anda istediğimiz gibi listelemenin yanında bulunan sembolu değiştirebiliyoruz istersek koymuyabiliyoruz-->
+      <ul style="list-style-type: georgian;">
+        <li><strong>Kullandığım Diller</strong></li>
+        <li>Örnek1</li>
+        <li>Örnek2</li>
+      </ul>
       <p>
-        <a href="https://github.com/alicantarakci" target="_blank">  <h6>GitHub için tıklayın.</h6> </a>
+        <a href="https://github.com/alicantarakci" target="_blank">  <h6>GitHub için tıklayın. </h6> </a>
         <a href="https://twitter.com/alicantarakci34" target="_blank"> <h6>Twitter için tıklayın.</h6> </a>
         <!-- Burda yaptığımız target="blank" olayı çok basit görünen ama bi o kadar anlamlı olan bir şey.Gideceğiniz linke sizin sitenizden ayırmayıp yeni sekmeden göndererek sizin sitenizden bağını kopartmıyor-->
         <a href="https://instagram.com/alicantarakci1907" target="_blank"> <h6>İnstagram için tıklayın</h6> </a>
@@ -61,6 +102,6 @@
         <a href="mailto:info@gmail.com">  <h6> Mail ile geri dönüş sağlayabilirsiniz </h6>
           <!--  Mailto:info@gmail.com ile yapılan linkte hangi bilgisayarda olursak olalım hangi işletim sistemine bağlı bir mail aracı var ise ona yönlendirir ve bize mail atması için kısa yol sağlarız -->
       </p>
-    </div>
+    </header>
   </body>
 </html>
