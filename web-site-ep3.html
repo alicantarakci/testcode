@@ -3,7 +3,31 @@
   <head>  <!-- Aşşağıda bulunan kısmı tek tek elle yazmak yerine '!'' işaretini yapıp klavyede 'Enter' tuşuna basarsak aşşağıda bulunan style yerine kadar olan bölüm gelir  -->
     <meta name="description" content="Doğuş Üniversitesi Yönetim Bilişim Sistemleri Öğrencisi">  <!-- Bu yaptığımız hareket ise şu,aşşağıda yazılan bilginin özetini yazarak aratmalarda kendinizi öne çıkarabilirsiniz -->
     <title>Benim Hakkımda Bilgi Almak İsterseniz</title> <!-- Burada ki amacımız Web site sekmesinde bulunan yere yazılacak yazı için bulunan alan -->
-    
+    <style>
+      section {
+          background-color: white;
+          text-align: center;
+      }
+      h1 {
+          color:black;
+      }
+      h2 {
+          color: black;
+      }
+      h3 {
+          color:black;
+      }
+      h4 {
+          color:black;
+      }
+      h5 {
+          color:black;
+      }
+      h6 {
+          color:black;
+      }
+
+  </style>
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -38,72 +62,33 @@
           }
       }
     </style>
+   
   </head>
-  
-  <!--Buraya Sitede işe yaramayacak ama diğer türlü bir tablo oluşturmamız gerektiğinde işe yarayacak kod dizisi bırakıyorum
-  
-  <table border="1" width="100%" > 
-
-  <tr>
-   <td>2</td>
-   <td>Kalem</td>
-   <td>25tl</td>
-   <td>kalem.jpeg</td>
-  </tr>
-  <tr>
-<td>4</td>
-<td>Silgi</td>
-<td>15tl</td>
-<td>silgi.jpeg</td>
-  </tr>
-  <tr>
-<td>3</td>
-<td>Defter</td>
-<td>50tl</td>
-<td>defter.jpeg</td>    
-  </tr>
-
-
-
-  </table>
-  
-  
-  -->
-
   <body>
-<!-- Çalışmadı-->
-    <style>
-      section {
-        text-align: ;
 
-        
-      }
-
+    <main>
+    
+  </main>
     </style>
     <!--Header etiketini kullandık bir blogger sayfası yapıyormuş gibi başlığı sağ üstten başlatıyor bu tarz başlıkları nereden nasıl başlamasını istiyorsanız uygun bir link
     bırakıyorum https://www.w3schools.com/html/html5_semantic_elements.asp bu link üzerindsen şematik şekilde nerede nasıl duracağını anlayabilirsiniz -->
     <header>
-      
+      <section>
       <h1>Hakkımda</h1> 
+    </section>
 
       
       
       <p style="color: rgb(23, 4, 34);">
         <!-- Burda Strong  olarak belirttiğim yerleri eski projemle kıyaslarsanız belirtilmesi için kalın şekillerde boyanmış önemli yerler olduğunu anlarsınız -->
-        <b>Merhaba </b> ben Alican.<strong>Doğuş Üniversitesi Yönetim Bilişim Sistemleri</strong>
+        <section><b>Merhaba </b> ben Alican.<strong>Doğuş Üniversitesi Yönetim Bilişim Sistemleri</strong>
         bölümünde aktif olarak okumaktayım.Kodlama hakkında bilgi edinmek için
         <strong>GitHub </strong> üzerinde çalışmalar yapmaktayım dilerseinz aşşağıdaki linkten
         github profilime erişebilir yaptığım kodlamlar hakkında yorum veya
         destek olabilirsiniz
       </p>
-      <!-- Aşşğıda bulunan ul ile bir alan oluşturdum altında istediğim yazıları alt alta listeleyerek sıralama yapılabilir hale getirdim.-->
-      <!-- Ul etiketinin içerisinde style eklediğimiz anda istediğimiz gibi listelemenin yanında bulunan sembolu değiştirebiliyoruz istersek koymuyabiliyoruz-->
-     <!-- <ul style="list-style-type: georgian;">
-        <li><strong>Kullandığım Diller</strong></li>
-        <li>Örnek1</li>
-        <li>Örnek2</li>
-      </ul>-->
       <h1>Aktif Öğrendiğim Kurslar</h1>
+    
       <table>
           <tbody>
              <tr>
@@ -126,51 +111,15 @@
              </tr>
            </tbody>  
       </table>
-      <!-- <form action="register.php">
-        <div>
-          <label for="name">Adınız</label>
-          <input type="text" id="name">
-        </div>
-          <div>
-            <label for="surname">Soyadınız</label>
-            <input type="text" id="surname">
-          </div>
-          <div>
-            <p>Tuttuğum Takım hangisidir</p>
-            <input type="radio" id="fenerbahce" name="tektakim">
-            <label for="fenerbahce"></label>
-            <input type="radio" id="besiktas" name="tektakim">
-            <label for="besiktas"></label>
-            <input type="radio" id="galatasaray" name="tektakim">
-            <label for="galatasaray"></label>
-            <input type="radio" id="trabzonspor" name="tektakim">
-            <label for="trabzonspor"></label>
-          </div>
-           <button type="sumbit"> KAYDET  </button>
-          </form>
-          Burda yapılmaya çalışan şey ise kullanıcı adı soyad gibi bir veri sistemi oluşturup kişinin bu sisteme kendini kaydetmesi ve aşşağıda bulunan radio ile yazılan yerlerde name 
-          tagı verilmesinin nedeni tek bir tane seçilmesi için yapılan bir yöntemdir name tagı olmazsa istediği kadar seçip kaldırabilir
-       --> 
-     <!--  <p>
-        <a href="https://github.com/alicantarakci" target="_blank">  <h6>GitHub için tıklayın. </h6> </a>
-        <a href="https://twitter.com/alicantarakci34" target="_blank"> <h6>Twitter için tıklayın.</h6> </a>
-         Burda yaptığımız target="blank" olayı çok basit görünen ama bi o kadar anlamlı olan bir şey.Gideceğiniz linke sizin sitenizden ayırmayıp yeni sekmeden göndererek sizin sitenizden bağını kopartmıyor-->
-      <!--  <a href="https://instagram.com/alicantarakci1907" target="_blank"> <h6>İnstagram için tıklayın</h6> </a> -->
-        <!-- Burda yaptığımız olay ise 'a' tuşuna basıp enter'e tıkladığımızda hazır olarak kullanılan butonu bize sunuyor gitmesini istediğimiz yerin adresini eklediğimizde oraya gidişini sağlayacak bir buton yapıyoruz ardından h6 veya istediğimiz bir yazı türü ile linke yazı yazıyoruz-->
       </p>
     
-      <!--Youtubeden aldığımız videonun uzunluğunu ve büyüklüğünü ayarlayarak web sitesinde koyabilirsiniz ancak çalışmadı SSL den dolayı -->
-     <!-- <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/VJPM01GL-OY"
-      title="YouTube video player" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-      İframe ile başka bir html dosyasında oluşturduğunuz örnek olarak aşşağıya koyduğum formu yaptığınız bu web sitesi içerisinde görünür hale getirebilirsiniz-->  
+      <!-- İframe ile başka bir html dosyasında oluşturduğunuz örnek olarak aşşağıya koyduğum formu yaptığınız bu web sitesi içerisinde görünür hale getirebilirsiniz-->  
       <iframe src="web-site-ep6.html" frameborder="0" width="400" height="400"></iframe>              
-      <iframe src="web-site-ep5.html" frameborder="0" width="400" height="400"></iframe>                   
+      <iframe src="web-site-ep5.html" frameborder="0" width="400" height="400"></iframe>  
+    </section>                 
       <a href="mailto:info@gmail.com">  <h3> Mail ile geri dönüş sağlayabilirsiniz </h3>
         <!--  Mailto:info@gmail.com ile yapılan linkte hangi bilgisayarda olursak olalım hangi işletim sistemine bağlı bir mail aracı var ise ona yönlendirir ve bize mail atması için kısa yol sağlarız -->
-      
+     
     </header>
   </body>
 </html>
