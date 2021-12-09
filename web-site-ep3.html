@@ -3,33 +3,7 @@
   <head>  <!-- Aşşağıda bulunan kısmı tek tek elle yazmak yerine '!'' işaretini yapıp klavyede 'Enter' tuşuna basarsak aşşağıda bulunan style yerine kadar olan bölüm gelir  -->
     <meta name="description" content="Doğuş Üniversitesi Yönetim Bilişim Sistemleri Öğrencisi">  <!-- Bu yaptığımız hareket ise şu,aşşağıda yazılan bilginin özetini yazarak aratmalarda kendinizi öne çıkarabilirsiniz -->
     <title>Benim Hakkımda Bilgi Almak İsterseniz</title> <!-- Burada ki amacımız Web site sekmesinde bulunan yere yazılacak yazı için bulunan alan -->
-    <style>
-      section {
-          background-color: white;
-          text-align: center;
-      }
-      h1 {
-          color:black;
-      }
-      h2 {
-          color: black;
-      }
-      h3 {
-          color:black;
-      }
-      h4 {
-          color:black;
-      }
-      h5 {
-          color:black;
-      }
-      h6 {
-          color:black;
-      }
 
-      
-
-  </style>
      <link rel="stylesheet" href="style.css">
 
     <meta charset="utf-8" />
@@ -38,8 +12,8 @@
     <style type="text/css">
        
         body {
-         <!--Burada istediğimizi koyuyoruz ama arka planı temizleyip doğru bir sayfa olması için kaldırıyorum  background-image:
-          url('https://i.hizliresim.com/diqfpuh.jpg');"> -->
+         /* Burada istediğimizi koyuyoruz ama arka planı temizleyip doğru bir sayfa olması için kaldırıyorum  */
+           /* background-image: url('https://i.hizliresim.com/diqfpuh.jpg'); */
           margin: 0;
           padding: 0;
           font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -65,7 +39,7 @@
           }
       }
     </style>
-   
+  
   </head>
   <body>
 
@@ -77,14 +51,15 @@
     bırakıyorum https://www.w3schools.com/html/html5_semantic_elements.asp bu link üzerindsen şematik şekilde nerede nasıl duracağını anlayabilirsiniz -->
     <header>
       <section>
-      <h1>Hakkımda</h1> 
+        <!--Burada yapılan id ile adlandırma ile uzun yazılardan arındırılıp hem kolayca yazmamızı sağlayacak isimlendirmeler yaparak yazıların rengini kolayca yapabiliriz-->
+      <h1 id="kırmızı" class="">Hakkımda</h1> 
     </section>
 
       
       
       <p style="color: rgb(23, 4, 34);">
         <!-- Burda Strong  olarak belirttiğim yerleri eski projemle kıyaslarsanız belirtilmesi için kalın şekillerde boyanmış önemli yerler olduğunu anlarsınız -->
-        <section><b>Merhaba </b> ben Alican.<strong>Doğuş Üniversitesi Yönetim Bilişim Sistemleri</strong>
+        <section><b id="kırmızı">Merhaba </b> ben Alican.<strong id="kırmızı">Doğuş Üniversitesi Yönetim Bilişim Sistemleri</strong>
         bölümünde aktif olarak okumaktayım.Kodlama hakkında bilgi edinmek için
         <strong>GitHub </strong> üzerinde çalışmalar yapmaktayım dilerseinz aşşağıdaki linkten
         github profilime erişebilir yaptığım kodlamlar hakkında yorum veya
@@ -114,7 +89,7 @@
              </tr>
              <tr>
                <td>
-              <h1 >Web Geliştirme Yol Haritam</h1>
+              <h1 class="yeşil" >Web Geliştirme Yol Haritam</h1>
               <ul>
                 <li  style="text-decoration: line-through; background-color: green;"> <input type="checkbox" name="" id="" checked>Html Öğren</li >
                 <li style="background-color:red"> <input type="checkbox" name="" id="" >Css Öğren</li>
