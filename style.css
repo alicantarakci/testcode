@@ -5,6 +5,27 @@ section {
     /* Neden f20nin başına nokta koyuldu anlamadım */
 .f20 { font-size: 20px;}
 .f18 { font-size: 18px;}
+.box {
+  width: 200px;
+  height: 200px;
+}
+p {
+  border:1px solid blue ;
+}
+div {
+  padding:  10px;
+}
+/* Burda p etiketi olan her yere 1 px lik bir çizgi çekmesini sağladım */
+/* Diğer tablolarda kullanımı olmaz çünkü oralarda tablo ile başlandığı için p etiketi olsun veya olmasın çıkmaz */
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.center { 
+  justify-content: center; 
+}  
 #kırmızı {
 color: red;
 }
