@@ -15,6 +15,28 @@ p {
 div {
   padding:  10px;
 }
+p::first-line{
+  color: brown;
+  word-spacing:
+  2px;
+  letter-spacing:
+  1px;
+}
+p.about::first-line{
+  color:green;
+}
+p::first-letter{
+  font-size: 
+  48px;
+}
+p::after{
+  content:"-";
+  display: block;
+  background-color: yellow;
+}
+ul li:first-child{
+  background-color: red;
+}
 /* Burda p etiketi olan her yere 1 px lik bir çizgi çekmesini sağladım */
 /* Diğer tablolarda kullanımı olmaz çünkü oralarda tablo ile başlandığı için p etiketi olsun veya olmasın çıkmaz */
 .flex-container {
