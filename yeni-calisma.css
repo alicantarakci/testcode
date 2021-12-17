@@ -1,0 +1,17 @@
+#container {
+    width: 1140px;
+    background-color: yellow;
+}
+#blog-post-container{
+    width: 75%;
+    background-color: blue;
+}
+#other-posts{
+    width: 25%;
+    background-color: brown;
+}
+#author-box{
+    border: 1px solid red;
+    background-color: red;
+}
+/* Bir kaçı oldu bir kaçı çalışmadı neden olduğu hakkında hiç bir fikrim yok */
