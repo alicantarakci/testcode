@@ -1,3 +1,4 @@
+/* renklerin nasıl kullanılığını öğrendik ancak bunu sadece bilgi olarak yazmak istedim buraya #00(kırmızı)00(yeşil)00(mavi) kısacası bunlara istediğimiz sayıları vererek rengi oluşturabiliyoruz rgb'nin anlamı burdan geliyor */
 section {
   background-color: white;
   text-align: center;
