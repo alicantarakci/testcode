@@ -16,7 +16,7 @@ p {
 div {
   padding:  10px;
 }
-/*
+
 p::first-line{
   color: brown;
   word-spacing:
@@ -36,7 +36,7 @@ p::after{
   display: block;
   background-color: yellow;
 }
-OLMADI ÇALIŞMADI */ 
+
 ul li:first-child{
   background-color: red;
 }
