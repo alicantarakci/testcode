@@ -7,10 +7,17 @@ table th{
     text-align: left;
     background-color: #2196F3;
     color: white;
+    padding: 100px 50px 100px 100px;
+    margin-top: 10px;
 }
 table td,table th{
     border: 1px solid #ddd;
     padding: 6px;
+    margin-top: 10px;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-right: 100px;
 }
 table tr:nth-child(even){
     background-color: #f2f2f2;
