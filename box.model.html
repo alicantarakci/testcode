@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>boxayarlama</title>
+        <style>
+         #box1 {
+             box-sizing: content-box;
+             width: 300px;
+             height: 100px;
+             background: green;
+             margin-bottom: 10px;
+             padding: 10px;
+             border: 10px solid black;
+         }
+         #box2 {
+             box-sizing: border-box;
+             width: 300px;
+             height: 100px;
+             background: gold;
+             padding: 10px;
+             border: 10px solid black;
+         }
+
+        </style>
+        <body>
+            <div id="box1">
+                300px genişlik genişletmelerle border ve paddingle 40 px gelecek 340 px 
+            </div>
+            <div id="box2"> 300 px tek bir şey kalacak border padding onları dahil şekilde olacağı için 300 px toplamı olacak</div>
+        </body>
+    </head>
+</html>
