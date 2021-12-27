@@ -1,0 +1,39 @@
+
+		body{
+			font-family: 'Open Sans', sans-serif;
+			width: 700px;
+			margin: 30px auto;
+		}
+		
+		h2{
+			text-transform:capitalize;
+		}
+		
+		p{			
+			font-size: 22px;
+			line-height: 150%;
+			word-spacing: 3px;
+			letter-spacing: 1px;
+			
+		}
+
+        .ikinci {
+            text-align: left;
+            column-count: 3;
+            column-rule: 2px solid lightblue;
+            border: 1px solid rgb(0,0,0,0.4);
+        }
+		
+		.bold{
+			font-weight: bold;
+		}
+		
+		.italic{
+			font-style: italic;
+		}
+		
+		.link{
+			color: #03a9f4;
+			text-decoration: none;
+		}
+        
