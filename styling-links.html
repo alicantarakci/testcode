@@ -29,11 +29,12 @@
 
         .main-header {
             background-color: #FC997C;
+            padding: 8px 16px;
         }
 
         .main-nav {
             display: inline-block;
-            width: calc(100% - 74px);
+            width: calc(100% - 99px);
             text-align: right;
         }
         .main-nav__items {
@@ -44,6 +45,19 @@
 
         .main-nav__item {
             display: inline-block;
+            margin: 0 10px;
+        }
+
+        .main-header__logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .main-nav__item a {
+            text-decoration: none;
+            color: #fff;
         }
        
     </style>
@@ -51,7 +65,7 @@
 <body>
 
     <header class="main-header">
-        <a href="#">MovieApp</a>
+        <a href="#" class="main-header__logo">MovieApp</a>
         <nav class="main-nav">
             <ul class="main-nav__items">
                 <li class="main-nav__item">
