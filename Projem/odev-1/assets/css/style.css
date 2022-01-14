@@ -1,0 +1,46 @@
+*{box-sizing: border-box;
+padding: 0;
+margin: 0;}
+main {
+    background-color: gray;
+    width: 100%;
+    height: 100vh;
+    padding:20px 20px 20px 20px;
+}
+main header {
+    background-color: red;
+    width: 100%;
+    height: 100px;      
+    margin-bottom: 20px;
+}
+main section{
+    display: flex;
+        
+}
+main section aside {
+    background-color: green;
+    width: 30%;
+    height: 800px;
+    margin: 0px 20px 0px 0px;
+    
+
+}
+main section ul {
+    background-color: yellow;
+    width: 70%;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+main section ul li {
+    padding: 20px;
+    width: 33.333%;
+}
+
+main section ul li div {
+    background-color: orange;   
+    height: 200px;
+    
+}
+
