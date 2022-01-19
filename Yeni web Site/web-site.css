@@ -79,3 +79,18 @@
     width: 2000px;
     height: 300px;
   }
+  .image-search{
+    background-color: #1d70b8;
+    background-image:url("Search.png");
+    width: 40px;
+    height: 40px;
+    background-size:40px 40px;
+    background-repeat:no-repeat;
+  }
+  .image-right{
+    background-color: black;
+    background-image:url("sagok.png");
+    width: 5px;
+    height: 5px;
+    background-repeat:no-repeat;
+  }
