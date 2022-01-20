@@ -1,0 +1,25 @@
+.navigation-center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.navigation-start {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.navigation-end {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+.navigation-space-between {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-between
+}
+.navigation-around {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
