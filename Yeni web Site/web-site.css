@@ -81,7 +81,7 @@ section {
   padding: inherit;
 }
 .mavi-yazi {
-  color: blue;
+  color: #1d70b8;
   font-family: "Bebas Neue", cursive;
 }
 .yarim {
@@ -137,5 +137,35 @@ section {
 .topics .flexContainer ul li p{}
 
 .homapage{width: 100%;}
-.homepagesol {width: 500px; height: 500px; float: left;}
-.homepagesag {width: 500px; height: 300px; float: right; }
+.homepagesol {float: left; width: 951px; height: 250px; padding-left: 460px;   }
+.homepagesag {float: right; width: 951px; height: 250px;   }
+.ustcizgi{ border-top: 1px solid black;}
+.container {
+  justify-content: space-evenly unsafe;
+}
+.bacak{
+  width: 910px; height: 600px; margin-top: 300px; margin-left: 460px;
+}
+.sol-alt{
+  width: 165px;
+  height: 100px;
+  float: left;
+}
+.orta{
+  width: 300px;
+  height: 150px;
+  float: left;
+  padding-left: 140px;
+}
+.sag-alt{
+  width: 300px;
+  height: 100px;
+  float: left;
+  padding-left: 150px;
+}
+.ayak{
+  width: 500px;
+  height: 400px;
+  margin-top: 200px;
+  
+}
