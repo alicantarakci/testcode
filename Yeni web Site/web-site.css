@@ -165,7 +165,35 @@ section {
 }
 .ayak{
   width: 500px;
-  height: 400px;
+  height: 200px;
   margin-top: 200px;
+
+ 
+}
+.alttaraf{
+ float: left;
+ border-top: 10px solid #1d70b8;
+ width: 2000px;
+ height: 950px;
+ margin-top: 200px;
+}
+.alt{
+  float: left;
+  padding-left: 460px;
+  width: 1000px;
+  height: 263px;
+}
+.altyan{
+  padding-left: 100px;
+  float: left;
   
+  width: 500px;
+  height: 500px;
+}
+.enalttaraf{ 
+  width: 1000px; 
+  height: 400px; 
+  margin-top: 800px; 
+  margin-left: 460px; 
+  border-top:  solid 2px gray;
 }
