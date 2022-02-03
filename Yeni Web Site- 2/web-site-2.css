@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+.baslik{
+   background-color:  #C4D600;
+   width: 100%;
+   height: 51px;
+}
+.araliklibosluk {
+    justify-content: space-around;
+}
+.baslikalti{
+    background-color:#5d6065;
+    width: 100%;
+    height: 80px;
+}
+.resimboyut{
+    width:100%;
+    height: 714px;
+}
+.ortayer{
+    width: 100%;
+    height: 1180px;
+    background-color: blue;
+}
+.ayagayakin{
+    width: 100%;
+    height: 755px;
+    background-color: red;
+}
+.ayak{
+    width: 100%;
+    height: 364px;
+    background-color: yellow;
+}
+.parmak{
+    width: 100%;
+    height: 56px;
+    background-color: black;
+}
+.yantaraf{
+    width: 600px;
+    height: 80px;
+    background-color: blue;
+    justify-content: flex-end;
+}
+.solagidecek{
+    width: 350px;
+    height: 50px;
+    background-color: red;
+}
+.sagagidecek{
+    width: 350px;
+    height: 50px;
+    background-color: orange;
+    
+}
