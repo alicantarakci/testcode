@@ -1,94 +1,45 @@
-/* renklerin nasıl kullanılığını öğrendik ancak bunu sadece bilgi olarak yazmak istedim buraya #00(kırmızı)00(yeşil)00(mavi) kısacası bunlara istediğimiz sayıları vererek rengi oluşturabiliyoruz rgb'nin anlamı burdan geliyor */
-section {
-  background-color: white;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
 }
-   
-.f20 { font-size: 20px;}
-.f18 { font-size: 18px;}
-.box {
-  width: 200px;
-  height: 200px;
+
+html {
+    font-size: 10px;
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1,h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
 p {
-  border:1px solid blue ;
-}
-div {
-  padding:  10px;
+    margin: 1rem 0;
 }
 
-p::first-line{
-  color: brown;
-  word-spacing:
-  2px;
-  letter-spacing:
-  1px;
-}
-p.about::first-line{
-  color:green;
-}
-p::first-letter{
-  font-size: 
-  48px;
-}
-p::after{
-  content:"-";
-  display: block;
-  background-color: yellow;
+img {
+    width: 100%;
 }
 
-ul li:first-child{
-  background-color: red;
-}
-ul li
-{
-  border: 1px solid gray;
-  margin-top 2px;
-}
-ul li:first-child {
-  word-spacing: 5px;
-}
-ul li:last-child {
-  letter-spacing: 5px;
-}
-/* nth-child(odd) dendiği zaman tek rakamlar listelenmişleri işlem görür
-   nth-child(even) dendiği zaman çift rakamların listelenmiş halleri işlem görür */
- 
-/* Burda p etiketi olan her yere 1 px lik bir çizgi çekmesini sağladım */
-/* Diğer tablolarda kullanımı olmaz çünkü oralarda tablo ile başlandığı için p etiketi olsun veya olmasın çıkmaz */
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-}
-.center { 
-  justify-content: center; 
-}  
-#kırmızı {
-color: red;
-}
-.yeşil {
-color: green;
-}
-.sarı {
-color: yellow;
-}
-h1 {
-  color:black;
-}
-h2 {
-  color: black;
-}
-h3 {
-  color:black;
-}
-h4 {
-  color:black;
-}
-h5 {
-  color:black;
-}
-h6 {
-  color:black;
+.text-center {
+    text-align: center;
 }
