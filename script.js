@@ -1,119 +1,67 @@
-// // Operatörler
+// ** Şimdiki tarihin gün ay ve yıl bilgisini yazdırınız.
 
-// let val;
-// const a=10;
-// const b=5;
-// const c=5;
-// let   d=3;
+var dt = new Date();
 
-// // 1- Aritmetik Operatörler
+console.log(dt);
+console.log(dt.getMonth()+1);
+console.log(dt.getDate());
+console.log(dt.getFullYear());
 
-// val = a+b;
-// val = a-b;
-// val = a*b;
-// val = a/b;
-// val = a%b;
-// val = d++;
-// val = ++d;
-// val = --d;
-// val = d--;
+// ** Tarih ve saat bilgisini içeren bir Date objesi oluşturunuz.
+var dtA = new Date('8/24/2010 14:50:10');
+var dtB = new Date(2010,7,24,14,50,10)
 
-// // 2- Atama Operatörleri
+console.log(dtA);
+console.log(dtB);
 
-// val = a;
-// val +=a; // val = val + a;
-// val -=a; // val = val - a;
-// val *=a; // val = val * a;
-// val /=a; // val = val / a;
-// val %=a; // val = val % a;
+// 1/1/1990 tarihinden bir gün öncesini gösteriniz. 
+var dtC = new Date('1/1/1990');
+var dayOfMonth = dtC.getDate();
+dtC.setDate(dayOfMonth-1);
+console.log(dtC);
 
+// iki tarih arasındaki geçen zamanı bulunuz.
+var start = new Date('1/1/1990');
+var end = new Date('2/10/1992');
 
-// // 3- Karşılaştırma Operatörleri
+var milisecond = end - start;
+var saniye = milisecond / 1000;
+var dakika = saniye / 60;
+var saat = dakika / 60;
+var gun = saat / 24;
 
-// val = a==b;
-// val = b==c;
-// val = b===c; // değer kontrolü & type
-// val = 5 === '5';
-// val = a!=b;
-// val = a!==b;
-// val = a > b;
-// val = b < a;
-// val = a >= b;
-// val = 5 >= 5;
-// val = a <= b;
+console.log('milisecond :'+milisecond)
+console.log('saniye : '+ saniye);
+console.log('dakika :'+ dakika);
+console.log('saat :' + saat);
+console.log('gun : '+gun);
 
-// // 4- Mantıksal Operatörler
+// Her yıl mayıs ayının 2.haftası pazar günü kutlanan anneler günü 2019 yılında ne zaman kutlanacaktır ?
 
-//    // && (And)
-//    // true  && true  => true
-//    // true  && false => false
-//    // false && false => false
+var annelerGunu = new Date();
+annelerGunu.setHours(0,0,0,0);
+annelerGunu.setFullYear(2019);
+annelerGunu.setDate(1);
+annelerGunu.setMonth(4);
 
-//    val=  (a>b) && (a>c) 
-//    val = (a>b) || (a<c)
-//    val = !(a>b)
+while(annelerGunu.getDay() != 0){
+    annelerGunu.setDate(annelerGunu.getDate()+1)
+}
+annelerGunu.setDate(annelerGunu.getDate()+7);
+console.log(annelerGunu);
 
+// ** Yaş hesaplama nasıl yapılır ?
 
-//    // || (Or)
- 
-//    // true  && true  => true
-//    // true  && false => true
-//    // false && false => false
+var birthday = new Date('8/1/1985');
+var ageDifMs = Date.now() - birthday.getTime();
+var ageDate = new Date(ageDifMs);
 
-//    // ! (Not)
-
-//    // !true  => false
-//    // !false => true
-
-// console.log(val);
-// console.log(typeof val);
+console.log(ageDate.getFullYear() - 1970);
+// console.log(birthday.getTime());
+// console.log(Date.now())
 
 
-// Demo : Operators
+var kurs = "Modern Javascript Dersleri: Baştan Sona Javascript Programlama";
+var result = kurs.lastIndexOf("Javascript"); // result: 7
 
-// 1 - Can ve Ada 'nın boy ve kg bilgilerini alın.
-// 2 - Alınan bilgilere göre kilo indekslerini hesaplayınız.
-//  ** Formül : Kişinin Kilosu / Boy Uzunluğunun Karesi
-// 3 - Hesaplanan indeks bilgisine göre karşılaştırma yapınız.
-// 4 - Aşağıdaki tabloya göre can ve ada hangi gruba giriyor.
-
-// 0 - 18,4: Zayıf
-// 18,5 - 24,9: Normal
-// 25,0 - 29,9: Fazla Kilolu
-// 30,0 - 34,9: Şişman (Obez)
-
-let IndexCan;
-let IndexAda;
-
-const kgCan = 60;
-const kgAda = 40;
-
-const heigtCan = 1.70;
-const heigtAda = 1.50;
-
-IndexAda = (kgAda) / (heigtAda*heigtAda);
-IndexCan = (kgCan) / (heigtCan*heigtCan);
-
-console.log(IndexAda.toFixed(2),IndexCan.toFixed(3));
-
-let adaHigherIndex = IndexAda>IndexCan;
-let canHigherIndex = IndexCan>IndexAda;
-
-console.log("Ada'nın kilo indeksi can'ın kilo indeksinden daha büyük : "+adaHigherIndex);
-
-console.log("Can'ın kilo indeksi ada'nın kilo indeksinden daha büyük : "+canHigherIndex);
-
-let AdaZayif = (IndexAda>=0) && (IndexAda<=18.4);
-let AdaNormal = (IndexAda>=18.5) && (IndexAda<=24.9);
-let AdaKilolu = (IndexAda>=25) && (IndexAda<=29.9);
-let AdaSisman = (IndexAda>=30) && (IndexAda<=34.9);
-
-console.log("Ada zayıf :"+AdaZayif);
-console.log("Ada'nın kilosu normal : "+AdaNormal);
-console.log("Ada kilolu mu : "+AdaKilolu);
-console.log("Ada şişman mı : "+AdaSisman);
-
-
-
-
-
+console.log(result)
