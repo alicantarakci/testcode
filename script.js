@@ -1,67 +1,69 @@
-// ** Şimdiki tarihin gün ay ve yıl bilgisini yazdırınız.
+// ** Bir müşterinin aşağıdaki bilgileri için değişken oluşturunuz.
 
-var dt = new Date();
+// ** Müşteri adı
+// ** Müşteri soyadı
+// ** Müşteri tc kimlik
+// ** Müşteri sipariş toplamı
+// ** Müşteri cinsiyet
+// ** Müşteri adres bilgisi
+// ** Müşteri hobiler
 
-console.log(dt);
-console.log(dt.getMonth()+1);
-console.log(dt.getDate());
-console.log(dt.getFullYear());
+var customerName = 'Çınar';
+var customerLastName = 'Turan';
 
-// ** Tarih ve saat bilgisini içeren bir Date objesi oluşturunuz.
-var dtA = new Date('8/24/2010 14:50:10');
-var dtB = new Date(2010,7,24,14,50,10)
+var fullName = 'Çınar Turan';
+var musteriId = '1322323232';
 
-console.log(dtA);
-console.log(dtB);
+var total = 205.6;
+var gender = false; // erkek true, kadın false
 
-// 1/1/1990 tarihinden bir gün öncesini gösteriniz. 
-var dtC = new Date('1/1/1990');
-var dayOfMonth = dtC.getDate();
-dtC.setDate(dayOfMonth-1);
-console.log(dtC);
-
-// iki tarih arasındaki geçen zamanı bulunuz.
-var start = new Date('1/1/1990');
-var end = new Date('2/10/1992');
-
-var milisecond = end - start;
-var saniye = milisecond / 1000;
-var dakika = saniye / 60;
-var saat = dakika / 60;
-var gun = saat / 24;
-
-console.log('milisecond :'+milisecond)
-console.log('saniye : '+ saniye);
-console.log('dakika :'+ dakika);
-console.log('saat :' + saat);
-console.log('gun : '+gun);
-
-// Her yıl mayıs ayının 2.haftası pazar günü kutlanan anneler günü 2019 yılında ne zaman kutlanacaktır ?
-
-var annelerGunu = new Date();
-annelerGunu.setHours(0,0,0,0);
-annelerGunu.setFullYear(2019);
-annelerGunu.setDate(1);
-annelerGunu.setMonth(4);
-
-while(annelerGunu.getDay() != 0){
-    annelerGunu.setDate(annelerGunu.getDate()+1)
+// object
+var address ={
+    city : 'Kocaeli',
+    district : 'İzmit',
+    body : 'Ömerağa mah.No:45'
 }
-annelerGunu.setDate(annelerGunu.getDate()+7);
-console.log(annelerGunu);
 
-// ** Yaş hesaplama nasıl yapılır ?
-
-var birthday = new Date('8/1/1985');
-var ageDifMs = Date.now() - birthday.getTime();
-var ageDate = new Date(ageDifMs);
-
-console.log(ageDate.getFullYear() - 1970);
-// console.log(birthday.getTime());
-// console.log(Date.now())
+// array
+var hobbies = ['Sinema','Kitap','Spor'];
 
 
-var kurs = "Modern Javascript Dersleri: Baştan Sona Javascript Programlama";
-var result = kurs.lastIndexOf("Javascript"); // result: 7
+// ** Aşağıdaki siparişlerin toplamını hesaplayınız.
 
-console.log(result)
+var order1=Number('100');
+var order2=Number('150');
+
+var totalOrder = order1 + order2;
+console.log(totalOrder);
+
+// ** Aşağıdaki siparişlerin toplamını hesaplayınız.
+
+var order3=Number('100.2');
+var order4=Number('150.5');
+
+var totalOrder2 = order3 + order4;
+console.log(totalOrder2);
+
+// ** Aşağıdaki siparişlerin toplamını tam sayı olarak hesaplayınız.
+
+var order4=parseInt('100.2');
+var order5=parseInt('150.5');
+
+var totalOrder3 = order4+order5
+console.log(totalOrder3);
+
+// ** Aşağıda verilen doğum yılına göre yaş hesaplayınız.
+
+const yearOfBirth = 1986;
+// yearOfBirth = 1987;
+
+console.log(new Date().getFullYear()-yearOfBirth);
+
+// ** Aşağıdaki string ifadenin karakter sayısını bulunuz.
+
+let course = 'Modern Javascript Kursu';
+
+console.log(course.length);
+
+
+
