@@ -1,47 +1,106 @@
-// Strings
+// Demo : Arrays
 
-const firstName = 'Sadık';
-const lastName = "Turan";
-let hobbies = 'sinema spor kitap yazılım';
-const age=35;
+// "Bmw,Mercedes,Opel,Mazda" elemanlarına sahip bir dizi oluşturun.
 
-let val;
+var arr = ["Bmw","Merdeces","Opel","Mazda"];
+// var arr2 = new Array("Bmw","Merdeces","Opel","Mazda")
 
-// string concatenation
+console.log(arr);
 
-val = firstName +" "+ lastName;
-val = 'Sadık';
-val +=' Turan';
+// Dizi kaç elemanlıdır ?
+console.log(arr.length)
 
-val = 'Benim adım '+firstName+' '+ lastName+ ' ve yaşım ' + age + ' izmit\'te yaşıyorum.';
+// Dizinin ilk ve son elemanı nedir ?
+console.log(arr[0])
+console.log(arr[3])
+console.log(arr[arr.length-1])
 
-//string concat
-val = firstName.concat(' ',lastName);
+// "Renault" değerini dizinin sonuna ekleyin.
+// arr[4] = "Renault";
+arr[arr.length] = "Renault";
+arr[arr.length] = "Fiat";
 
-// string uppercase - lowercase
-val = val.toUpperCase();
-val = val.toLowerCase();
+arr.push('Toyota');
 
-// string replace
-val = '  '+val.replace('sadik','çınar')+'     ';
+// "Toyota" değerini dizinin başına ekleyin.
+arr.unshift('Seat');
 
-// trim
-val = val.trim();
+// "Seat" değerini siliniz.
+arr.shift('Seat');
 
-// substring 
-// val = val.substring(3,8);
+// "Toyota" değerini siliniz.
+arr.pop('Toyota');
 
-// slice
-// val = val.slice(6); 
+// Dizi elemanlarını ters çevirin
+arr.reverse()
 
-//val = val.indexOf('x');
+// Dizi elemanlarını alfabetik olarak sıralayın.
+arr.sort();
 
-//val = val[1];
+// [1,2,5,80] dizisini sıralayın.
+var numbers =[1,2,5,80,15];
 
-//string length
-//val = val.length;
+function compare(a,b){
+    if(a>b) return 1;
+    if(a==b) return 0;
+    if (a<b) return -1;
+}
 
-val =hobbies.split(' ')
+console.log(numbers.sort(compare)); 
 
-console.log(val);
-console.log(typeof val);
+// "Opel" değeri dizinin bir elemanımıdır ?
+console.log(arr);
+console.log(arr.indexOf('Opel'));
+console.log(arr.includes('Opel'));
+
+
+// var str = "Chevrolet,Dacia";
+// ifadesini diziye çeviriniz.
+
+var str = "Chevrolet,Dacia";
+var arr2 = str.split(',');
+console.log(arr2)
+
+// Oluşturulan 2 dizinin elemanlarını bir başka dizi ile birleştirin.
+var arr3 = arr.concat(arr2);
+console.log(arr3);
+
+// Oluşturulan diziden son 2 elemanı siliniz.
+
+// console.log(arr3.pop());
+// console.log(arr3.pop());
+
+// console.log(arr3.splice(6,2));
+console.log(arr3.slice(6,8));
+
+console.log(arr3);
+
+/* Aşağıda verilen elemanları bir dizi içerisinde saklayınız.
+     
+     studentA : Yiğit Bilgi 2010
+     StudentB : Sena Turan  1999
+     studentC : Ahmet Turan 1998   
+
+*/
+
+var studentA = ['Yiğit','Bilgi',2010];
+var studentB = ['Sena','Turan',1999];
+var studentC = ['Ahmet','Turan',1998];
+
+var students =[studentA,studentB,studentC];
+
+console.log(students[0]);
+
+console.log(students[0][0]);
+console.log(students[0][1]);
+console.log(students[0][2]);
+
+console.log(students[1][0]);
+console.log(students[1][1]);
+console.log(students[1][2]);
+
+console.log(students[2][0]);
+console.log(students[2][1]);
+console.log(students[2][2]);
+
+console.log(students)
