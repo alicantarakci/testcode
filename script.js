@@ -1,52 +1,47 @@
-// Scopes
+// Strings
 
-// ** Global Scopes
-var name = 'Çınar';
-var age = 25;
+const firstName = 'Sadık';
+const lastName = "Turan";
+let hobbies = 'sinema spor kitap yazılım';
+const age=35;
 
-function logName(){
-    var name = 'Ada';
-    var age = '12';
-    console.log('function scope',name,age);
-}
+let val;
 
+// string concatenation
 
-if(true){
-    var age = 30;
-    console.log('block scope',name,age);
-}
+val = firstName +" "+ lastName;
+val = 'Sadık';
+val +=' Turan';
 
-console.log(age);
+val = 'Benim adım '+firstName+' '+ lastName+ ' ve yaşım ' + age + ' izmit\'te yaşıyorum.';
 
-logName();
-console.log(name);
+//string concat
+val = firstName.concat(' ',lastName);
 
+// string uppercase - lowercase
+val = val.toUpperCase();
+val = val.toLowerCase();
 
-// ** Local Scopes
+// string replace
+val = '  '+val.replace('sadik','çınar')+'     ';
 
-// Fonksiyonlar kendi scope 'larını oluşturur.
-// **Block'lar yeni scope oluşturmaz.
-// ES6 ile gelen let ve const block scope oluşturur.
+// trim
+val = val.trim();
 
-console.log('*********************');
+// substring 
+// val = val.substring(3,8);
 
-if(true){
-    var model = 'Opel';
-    let year = 2016;
-    const color = 'white';
-    console.log('block scope',model,year,color);
-}
-console.log(model);
-//console.log(color);
+// slice
+// val = val.slice(6); 
 
-var i = 1;
+//val = val.indexOf('x');
 
-for(let i=0; i<10;i++){
-    console.log('i',i);
-}
+//val = val[1];
 
-console.log(i);
+//string length
+//val = val.length;
 
+val =hobbies.split(' ')
 
-
-
+console.log(val);
+console.log(typeof val);
