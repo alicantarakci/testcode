@@ -1,47 +1,45 @@
-// Strings
+// Demo : Strings
 
-const firstName = 'Sadık';
-const lastName = "Turan";
-let hobbies = 'sinema spor kitap yazılım';
-const age=35;
+var sentence = "  Template Literals or template strings is the ability Have multi-line strings without any funny business. ";
 
-let val;
+var url = "http://sadikturan.com/Modern Javascipt KURSU sıfırdan ileri seviye ü ö ş";
 
-// string concatenation
+// cümle kaç karakterlidir ?
+console.log(sentence.length);
 
-val = firstName +" "+ lastName;
-val = 'Sadık';
-val +=' Turan';
+// kaç kelimeden oluşuyor ?
+console.log(sentence.trim().split(' ').length);
 
-val = 'Benim adım '+firstName+' '+ lastName+ ' ve yaşım ' + age + ' izmit\'te yaşıyorum.';
+// Tüm cümleyi küçük harfe çevirin.
+console.log(sentence.toLowerCase())
+console.log(sentence.toUpperCase());
 
-//string concat
-val = firstName.concat(' ',lastName);
+// Cümlenin başındaki ve sonundaki boşlukları siliniz.
+console.log(sentence.trim());
 
-// string uppercase - lowercase
-val = val.toUpperCase();
-val = val.toLowerCase();
+// '-' karakterini silin.
+console.log(sentence.replace('-',''));
 
-// string replace
-val = '  '+val.replace('sadik','çınar')+'     ';
+// url'nin içinden str kısmını çıkarınız.
+var str = 'http://';
+console.log(url.substr(str.length));
+console.log(url.slice(str.length));
 
-// trim
-val = val.trim();
+// url hangi protocol'u kullanmaktadır ? (http,https)
+console.log(url.startsWith('http'));
+console.log(url.startsWith('https'));
 
-// substring 
-// val = val.substring(3,8);
+// url, '.com' ifadesini içeriyor mu?
+console.log(url.indexOf('.com'));
+console.log(url.includes('.com'));
 
-// slice
-// val = val.slice(6); 
+// url string ifadesini geçerli bir url olarak düzenleyiniz.
 
-//val = val.indexOf('x');
-
-//val = val[1];
-
-//string length
-//val = val.length;
-
-val =hobbies.split(' ')
-
-console.log(val);
-console.log(typeof val);
+console.log(url.toLowerCase()
+               .replace(/ /g,'-') 
+               .replace(/ı/g,'i')
+               .replace(/ü/g,'u')
+               .replace(/ö/g,'o')
+               .replace(/ş/g,'s')
+               .replace(/ç/g,'c')
+);
