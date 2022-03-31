@@ -1,45 +1,50 @@
-// Demo : Strings
+// if/else statements
 
-var sentence = "  Template Literals or template strings is the ability Have multi-line strings without any funny business. ";
+const firstName='Sena';
+const age = 19;
+const isStudent = false;
+const school = 'university';
 
-var url = "http://sadikturan.com/Modern Javascipt KURSU sıfırdan ileri seviye ü ö ş";
+// if(firstName === 'Sena'){
+//     console.log('Merhaba Sena');
+// }
 
-// cümle kaç karakterlidir ?
-console.log(sentence.length);
+// if (age === 19){
+//     console.log('yaşınız 19');
+// }
 
-// kaç kelimeden oluşuyor ?
-console.log(sentence.trim().split(' ').length);
+// if (isStudent){
+//     console.log('Merhaba öğrenci');
+// }else{
+//     console.log('Merhaba işler nasıl');
+// }
 
-// Tüm cümleyi küçük harfe çevirin.
-console.log(sentence.toLowerCase())
-console.log(sentence.toUpperCase());
 
-// Cümlenin başındaki ve sonundaki boşlukları siliniz.
-console.log(sentence.trim());
+// if (age>=18){
 
-// '-' karakterini silin.
-console.log(sentence.replace('-',''));
+//     if ((school == 'university') || (school == 'high school')){
+//         console.log('ehliyet alabilirsiniz');
+//     } else{
+//         console.log('eğitim durumunuz yetersiz');
+//     }
 
-// url'nin içinden str kısmını çıkarınız.
-var str = 'http://';
-console.log(url.substr(str.length));
-console.log(url.slice(str.length));
+// }else{
+//     console.log('ehliyet alamazsınız');
+// }
 
-// url hangi protocol'u kullanmaktadır ? (http,https)
-console.log(url.startsWith('http'));
-console.log(url.startsWith('https'));
 
-// url, '.com' ifadesini içeriyor mu?
-console.log(url.indexOf('.com'));
-console.log(url.includes('.com'));
+// if (age > 0  && age<12 ){
+//     console.log(`${firstName} is a child`);
+// }else if (age >=13 && age <=19){
+//     console.log(`${firstName} is a teenager`);
+// }else{
+//     console.log(`${firstName} is an adult`);
+// }
 
-// url string ifadesini geçerli bir url olarak düzenleyiniz.
+//undefined
 
-console.log(url.toLowerCase()
-               .replace(/ /g,'-') 
-               .replace(/ı/g,'i')
-               .replace(/ü/g,'u')
-               .replace(/ö/g,'o')
-               .replace(/ş/g,'s')
-               .replace(/ç/g,'c')
-);
+if (typeof id !== 'undefined'){
+    console.log('id: '+id);
+}else{
+    console.log('no id');
+}
