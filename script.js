@@ -1,38 +1,36 @@
-// var trafigeCikis = new Date('04/20/2014');
-// trafigeCikis.setHours(0,0,0,0);
-// var trafiktekiMs = Date.now() - trafigeCikis.getTime();
-// var trafiktekiGun =Math.floor(trafiktekiMs/(1000*60*60*24));
+/* 
+   Demo Loops : Sayı Tahmin Oyunu
 
-// if(trafiktekiGun<=365){
-//     console.log('1.servis bakım süreniz geldi');
-// }else if(trafiktekiGun>365 && trafiktekiGun<=365*2){
-//     console.log('2.servis bakım süreniz geldi');
-// }else if(trafiktekiGun>365*2 && trafiktekiGun<=365*3){
-//     console.log('3.servis bakım süreniz gelmiştir.')
-// }else{
-//     console.log('bilinmeyen bir süre');
-// }
+   1-10 arası rastgele sayı üretilen bir sayıyı aşağı yukarı ifadeleri ile buldurmaya çalışın.
+   ** puanlama yapın.
+   ** kullanıcı kaç kerede bileceğini belirtebilsin.
+*/
 
+var hak,can;
+var tahmin,sayac=0;
+var sayi = Math.floor((Math.random()*10)+1);
+can = Number(prompt('kaç kerede bileceksiniz ?'));
+hak = can;
 
-// console.log(trafiktekiGun);
+console.log(sayi);
 
+while(hak>0){
+    hak--;
+    sayac++;
+    tahmin = Number(prompt('bir sayı giriniz'));
 
-var result = prompt("who's there ? ");
-
-if(result == 'cancel'){
-    console.log('cancelled');
-}else if(result == 'Admin'){   
-
-    var password = prompt('enter your password : ');
-
-    if(password =='cancel'){
-        console.log('cancelled');
-    }else if(password== '1234'){
-        console.log('welcome Admin');
+    if(sayi == tahmin){
+        console.log(`Tebrikler ${sayac} defada bildiniz.`);
+        console.log(`puan : ${100 - (100/can)*(sayac-1)}`);
+        break;
+    }else if (sayi > tahmin){
+        console.log('yukarı');
     }else{
-        console.log('wrong password');
+        console.log('aşağı');
     }
 
-}else{
-    console.log('I dont know you');
+    if(hak==0){
+        console.log('hakkınız bitti. sayı :'+sayi);
+    }
 }
+
