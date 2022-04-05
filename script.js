@@ -1,36 +1,31 @@
-/* 
-   Demo Loops : Sayı Tahmin Oyunu
+// Numbers
 
-   1-10 arası rastgele sayı üretilen bir sayıyı aşağı yukarı ifadeleri ile buldurmaya çalışın.
-   ** puanlama yapın.
-   ** kullanıcı kaç kerede bileceğini belirtebilsin.
-*/
+let val;
 
-var hak,can;
-var tahmin,sayac=0;
-var sayi = Math.floor((Math.random()*10)+1);
-can = Number(prompt('kaç kerede bileceksiniz ?'));
-hak = can;
+// val = Number('10');
+// val = parseInt('10');
+// val = parseFloat('10.5');
+// val = parseInt('a10a');
+// val = isNaN('10');
+// val = isNaN('a10');
 
-console.log(sayi);
+// var num = 10.12456789;
+// val = num.toPrecision(6);
+// val = num.toFixed(2);
 
-while(hak>0){
-    hak--;
-    sayac++;
-    tahmin = Number(prompt('bir sayı giriniz'));
+val = Math.PI;
+val = Math.round(2.4);
+val = Math.round(2.7);
+val = Math.ceil(2.4);
+val = Math.ceil(2.6);
+val = Math.floor(2.4);
+val = Math.floor(2.7);
+val = Math.sqrt(64);
+val = Math.pow(2,4);
+val = Math.abs(-100);
+val = Math.min(1,2,3,2,4,9);
+val = Math.max(4,5,6,4,98,7);
+val = Math.floor(Math.random()*100+1);
 
-    if(sayi == tahmin){
-        console.log(`Tebrikler ${sayac} defada bildiniz.`);
-        console.log(`puan : ${100 - (100/can)*(sayac-1)}`);
-        break;
-    }else if (sayi > tahmin){
-        console.log('yukarı');
-    }else{
-        console.log('aşağı');
-    }
-
-    if(hak==0){
-        console.log('hakkınız bitti. sayı :'+sayi);
-    }
-}
-
+console.log(val);
+console.log(typeof val);
