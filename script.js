@@ -1,31 +1,38 @@
-// Numbers
+// var trafigeCikis = new Date('04/20/2014');
+// trafigeCikis.setHours(0,0,0,0);
+// var trafiktekiMs = Date.now() - trafigeCikis.getTime();
+// var trafiktekiGun =Math.floor(trafiktekiMs/(1000*60*60*24));
 
-let val;
+// if(trafiktekiGun<=365){
+//     console.log('1.servis bakım süreniz geldi');
+// }else if(trafiktekiGun>365 && trafiktekiGun<=365*2){
+//     console.log('2.servis bakım süreniz geldi');
+// }else if(trafiktekiGun>365*2 && trafiktekiGun<=365*3){
+//     console.log('3.servis bakım süreniz gelmiştir.')
+// }else{
+//     console.log('bilinmeyen bir süre');
+// }
 
-// val = Number('10');
-// val = parseInt('10');
-// val = parseFloat('10.5');
-// val = parseInt('a10a');
-// val = isNaN('10');
-// val = isNaN('a10');
 
-// var num = 10.12456789;
-// val = num.toPrecision(6);
-// val = num.toFixed(2);
+// console.log(trafiktekiGun);
 
-val = Math.PI;
-val = Math.round(2.4);
-val = Math.round(2.7);
-val = Math.ceil(2.4);
-val = Math.ceil(2.6);
-val = Math.floor(2.4);
-val = Math.floor(2.7);
-val = Math.sqrt(64);
-val = Math.pow(2,4);
-val = Math.abs(-100);
-val = Math.min(1,2,3,2,4,9);
-val = Math.max(4,5,6,4,98,7);
-val = Math.floor(Math.random()*100+1);
 
-console.log(val);
-console.log(typeof val);
+var result = prompt("who's there ? ");
+
+if(result == 'cancel'){
+    console.log('cancelled');
+}else if(result == 'Admin'){   
+
+    var password = prompt('enter your password : ');
+
+    if(password =='cancel'){
+        console.log('cancelled');
+    }else if(password== '1234'){
+        console.log('welcome Admin');
+    }else{
+        console.log('wrong password');
+    }
+
+}else{
+    console.log('I dont know you');
+}
