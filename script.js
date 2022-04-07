@@ -1,38 +1,51 @@
-// var trafigeCikis = new Date('04/20/2014');
-// trafigeCikis.setHours(0,0,0,0);
-// var trafiktekiMs = Date.now() - trafigeCikis.getTime();
-// var trafiktekiGun =Math.floor(trafiktekiMs/(1000*60*60*24));
+// Object Literals
 
-// if(trafiktekiGun<=365){
-//     console.log('1.servis bakım süreniz geldi');
-// }else if(trafiktekiGun>365 && trafiktekiGun<=365*2){
-//     console.log('2.servis bakım süreniz geldi');
-// }else if(trafiktekiGun>365*2 && trafiktekiGun<=365*3){
-//     console.log('3.servis bakım süreniz gelmiştir.')
-// }else{
-//     console.log('bilinmeyen bir süre');
-// }
+let val;
 
-
-// console.log(trafiktekiGun);
-
-
-var result = prompt("who's there ? ");
-
-if(result == 'cancel'){
-    console.log('cancelled');
-}else if(result == 'Admin'){   
-
-    var password = prompt('enter your password : ');
-
-    if(password =='cancel'){
-        console.log('cancelled');
-    }else if(password== '1234'){
-        console.log('welcome Admin');
-    }else{
-        console.log('wrong password');
+let person = {
+    firstName : 'Çınar',
+    lastName : 'Turan',
+    age : 7,
+    hobbies : ['music','game'],
+    address : {
+        city : 'Kocaeli',
+        country : 'Türkiye'
+    },
+    getBirthYear : function(){
+        return 2018- this.age;
     }
+};
 
-}else{
-    console.log('I dont know you');
+val = person;
+val = person.firstName;
+val = person.lastName;
+val = person['firstName'];
+val = person.age;
+val = person.hobbies;
+val = person.hobbies[1];
+val = person.hobbies.length;
+val = person.address;
+val = person.address.city;
+val = person.address['city'];
+val = person.getBirthYear();
+
+
+
+
+let people = [
+                {firstName : 'Çınar',lastName:'Turan'},
+                {firstName : 'Sena',lastName:'Turan'},
+                {firstName : 'Seda',lastName:'Turan'}
+             ];
+
+
+val = people[2];
+val = people[2].firstName;
+
+for(let i =0; i<people.length;i++){
+    console.log(people[i].firstName);
 }
+
+// console.log(val);
+// console.log(typeof people);
+
