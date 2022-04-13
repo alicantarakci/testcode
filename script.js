@@ -1,39 +1,32 @@
-let url = "https://www.sadikturan.com";
-let kursAdi = "Komple Web Geliştirme Kursu";
+let simdi = new Date(); // şimdiki tarih - saat
 
-// 1- url kaç karakterlidir?
+// Get Methods
+sonuc = simdi;
+sonuc = simdi.getDate();    // gün
+sonuc = simdi.getDay();     // 0: pazar 6: cumartesi
+sonuc = simdi.getFullYear(); // yıl
+sonuc = simdi.getHours();   // saat
+sonuc = simdi.getTime();
 
-let sonuc;
+// Set Methods
+// simdi.setFullYear(2025);
+simdi.setMonth(7);          // 0: Ocak
+simdi.setDate(15);
 
-sonuc = url.length;
+sonuc = simdi;
 
-// 2- kursAdi kaç kelimeden oluşmaktadır?
-sonuc = kursAdi.split(" ").length;
+let dogumTarihi = new Date(1990, 5, 15);
 
-// 3- url https ile mi başlıyor?
+sonuc = simdi.getFullYear() - dogumTarihi.getFullYear();
 
-sonuc = url.startsWith("https");
+let milisecond = simdi - dogumTarihi;
+let saniye = milisecond / 1000;     // saniye
+let dakika = saniye / 60;
+let saat = dakika / 60;
+let gun = saat / 24;
 
-if (sonuc) {
-    console.log("evet başlıyor");
-}
-
-// 4- kursAdi içerisinde Eğitimi kelimesi var mı?
-
-if (kursAdi.indexOf("Eğitimi") > -1) {
-    console.log("evet var");
-} else {
-    console.log("hayır yok");
-}
-
-// 5- url ve kursAdi değişkenlerini kullanarak aşağıdaki string bilgiyi oluşturunuz.
-
-// https://www.sadikturan.com/komple-web-gelistirme-kursu
-
-kursAdi = kursAdi.toLowerCase();
-kursAdi = kursAdi.replaceAll(" ","-");
-kursAdi = kursAdi.replace("ş","s").replace("ı","i");
-
-sonuc = `${url}/${kursAdi}`;
+sonuc = gun;
 
 console.log(sonuc);
+console.log(typeof sonuc);
+
