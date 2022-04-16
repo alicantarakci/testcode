@@ -165,7 +165,7 @@
             // btn0
             // 
             this.btn0.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn0.Location = new System.Drawing.Point(52, 324);
+            this.btn0.Location = new System.Drawing.Point(133, 392);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(75, 62);
             this.btn0.TabIndex = 12;
@@ -261,7 +261,7 @@
             // btnkarekok
             // 
             this.btnkarekok.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnkarekok.Location = new System.Drawing.Point(133, 392);
+            this.btnkarekok.Location = new System.Drawing.Point(52, 392);
             this.btnkarekok.Name = "btnkarekok";
             this.btnkarekok.Size = new System.Drawing.Size(75, 62);
             this.btnkarekok.TabIndex = 21;
