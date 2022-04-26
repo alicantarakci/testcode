@@ -1,28 +1,48 @@
 #include<stdio.h>
 #include<stdlib.h>
-int a[11],i,k,m,b;
+int a[6][6],i,j,k;
+float tp,ort;
 main()
 {
-	for(i=1;i<=10;i++) {
-		printf("%d. sayiyi gir..",i);
-		scanf("%d",&a[i]);
-	}
-	m=9;
-	do
-	{
-		k=0;
-		for(i=1;i<=m;i++) {
-			if(a[i]>a[i+1]) {
-				b=a[i];a[i]=a[i+1];a[i+1]=b;k=1;
-			}
+	tp=0;
+	for(i=1;i<=5;i++) {
+		for(j=1;j<=5;j++) {
+			printf("%d %d.sayiyi gir..",i,j);
+			scanf("%d",&a[i][j]);
+			tp=tp+a[i][j];
 		}
-		m--;	
 	}
-	while(k!=0);
-	for(i=1;i<=10;i++)
-	   printf("%d   ",a[i]);
+	ort=tp/25;
+	k=0;
+	if(ort==int(ort)) {
+		for(i=1;i<=5;i++) {
+			for(j=1;j<=5;j++)
+			  if(ort==a[i][j]) k++;
+		}
+		if(k==0) printf("%2.1f ortalamasindan yok ",ort);
+		else printf("%2.1f ortalamasindan %d tane var  ",ort,k);
+	}
+	else printf("%2.1f ortalamasi tam sayi degil  ",ort);	 
+}	
+#include<stdio.h>
+#include<stdlib.h>
+int a[6][6],i,j,eb;
+main()
+{
+	for(i=1;i<=5;i++) {
+		for(j=1;j<=5;j++) {
+			printf("%d %d.sayiyi gir..",i,j);
+			scanf("%d",&a[i][j]);
+	    }
+    }
+    for(i=1;i<=5;i++) {
+    	eb=a[i][1];
+    	for(j=2;j<=5;j++)
+    	  if(eb<a[i][j]) eb=a[i][j];
+    	printf("%d. satirin en buyuk elemani %d dir.\n",i,eb);
+	}
 }
-///
+    
 #include<stdio.h>
 #include<stdlib.h>
 int a[6][6],i,j;
@@ -40,28 +60,3 @@ main()
 	printf("\n");
 	}
 }
-
-///
-#include<stdio.h>
-#include<stdlib.h>
-int a[6][6],i,j,eb,ek;
-main()
-{
-	for(i=1;i<=5;i++) {
-		for(j=1;j<=5;j++) {
-			printf("%d %d. sayiyi gir..",i,j);
-			scanf("%d",&a[i][j]);
-		}
-	}
-	eb=a[1][1];ek=a[1][1];
-	for(i=1;i<=5;i++) {
-		for(j=1;j<=5;j++) {
-			if(eb<a[i][j]) eb=a[i][j];
-			if(ek>a[i][j]) ek=a[i][j];
-		}
-	}
-	printf("matrisin en buyuk elemani=%d\n",eb);
-	printf("matrisin en kucuk elemani=%d\n",ek);
-}
-
-///
