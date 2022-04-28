@@ -1,67 +1,73 @@
-// 1- "Elma,Armut,Muz,Çilek" elemanlarına sahip bir dizi oluşturunuz.
+let sayilar = [1,5,7,15,3,25,12,24];
 
-let meyveler = ["Elma","Armut","Muz","Çilek"];
+// 1- sayilar listesindeki her bir elemanın karesini yazdırınız.
 
-// 2- Dizi kaç elemanlıdır?
+// for (let sayi of sayilar) {
+//     console.log(sayi * sayi);
+// }
 
-console.log(meyveler.length);
+// 2- sayilar listesindeki hangi sayılar 5' in katıdır?
+// for(let i=0; i<sayilar.length; i++) {
+//     if(sayilar[i] % 5 == 0) {
+//         console.log(sayilar[i]);
+//     }
+// }
 
-// 3- Dizinin ilk ve son elemanı nedir?
-console.log(meyveler[0]);   // Elma
-console.log(meyveler[meyveler.length - 1]);   // Çilek
+// 3- sayilar listesindeki çift sayıların toplamını bulunuz.
 
-// 4- Elma dizinin bir elemanımıdır?
-console.log(meyveler.includes("Elma"));
-console.log(meyveler.indexOf("Elma"));
+// let toplam = 0;
+// for(let i in sayilar) {
+//     if (sayilar[i]%2==0) {
+//         toplam += sayilar[i];
+//     }
+// }
+// console.log(toplam);
 
-// 5- Kiraz meyvesini listenin sonuna ekleyiniz.
+let urunler = ["iphone 12","samsung s22","iphone 13","samsung s23","samsung s20"];
 
-// meyveler[meyveler.length] = "Kiraz";
-meyveler.push("Kiraz");
+// 4- urunler listesindeki tüm ürünleri büyük harf ile yazdırınız.
 
-// 6- Dizinin son 2 elemanını siliniz.
+// for(let urun of urunler) {
+//     console.log(urun.toUpperCase());
+// }
 
-// meyveler.pop();
-// meyveler.pop();
+// 5- urunler listesinde samsung geçen kaç ürün vardır?
 
-// meyveler.splice(meyveler.length - 2, 2);
+// let adet = 0;
 
-// 7- Aşağıdaki bilgileri dizi içerisinde saklayınız ve her öğrencinin yaşını ve not ortalamasını hesaplayınız.
-    /*
-        Öğrenci 1: Yiğit Bilgi 2010 (70,60,80)
-        Öğrenci 2: Ada Bilgi 2012   (80,80,90)
-        Öğrenci 3: Ahmet  2009 (60,60,70)
-    */
+// for(let urun of urunler) {
+//     if(urun.includes("samsung")) {
+//         adet++;
+//     }
+// }
 
-let ogr1 = [
-    "Yiğit",
-    "Bilgi",
-    2010,
-    [70,60,80]
+// console.log(adet);
+
+let ogrenciler = [
+    {"ad":"yiğit", "soyad": "bilgi", "notlar": [60,70,60]},
+    {"ad":"ada", "soyad": "bilgi", "notlar": [80,70,80]},
+    {"ad":"çınar", "soyad": "turan", "notlar": [10,20,60]}
 ];
 
-let ogr2 = [
-    "Ada",
-    "Bilgi",
-    2012,
-    [80,80,90]
-];
+// ogrenciler listesindeki her öğrencinin not ortalaması ve başarı durumlarını yazdırınız.
 
-let ogr3 = [
-    "Ahmet",
-    "Turan",
-    2009,
-    [60,60,70]
-];
+for(let ogrenci of ogrenciler) {
+    let not_toplam = 0;
+    let ortalama = 0;
+    let adet = 0;
+    for(let not of ogrenci.notlar) {
+        not_toplam += not;
+        adet++;
+    }
+    ortalama = not_toplam / adet;
 
-let ogrenciler = [ogr1, ogr2, ogr3];
+    console.log(`${ogrenci.ad} ${ogrenci.soyad} isimli öğrencimnin not ortalaması : ${ortalama}.`);
 
-let yigit_yas =  new Date().getFullYear() - ogrenciler[0][2];
-let ada_yas =  new Date().getFullYear() - ogrenciler[1][2];
-let ahmet_yas =  new Date().getFullYear() - ogrenciler[2][2];
+    if(ortalama>=50) {
+        console.log("başarılı.");
+    } else {
+        console.log("başarısız.");
+    }    
+}
 
-let yigit_not = (ogrenciler[0][3][0] + ogrenciler[0][3][1] + ogrenciler[0][3][2]) / 3;
-let ada_not = (ogrenciler[1][3][0] + ogrenciler[1][3][1] + ogrenciler[1][3][2]) / 3;
-let ahmet_not = (ogrenciler[2][3][0] + ogrenciler[2][3][1] + ogrenciler[2][3][2]) / 3;
-
-console.log(yigit_not.toFixed(1), ada_not.toFixed(1), ahmet_not.toFixed(1));
+// tüm öğrencilerin not ortalaması kaçtır?
