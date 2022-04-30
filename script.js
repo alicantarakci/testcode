@@ -1,72 +1,47 @@
-// 1- Kendisine gönderilen kelimeyi belirtilen kez ekranda yazan fonksiyonu yapınız.
+/* 
+    1- İki öğrencinin aşağıdaki bilgilerini değişkenler içerisinde saklayınız.
 
-function kelimeYazdir(kelime, adet) {
-    for (let i=0; i < adet; i++) {
-        console.log(kelime);
-    }
-}
+        öğrenci 1: 
+            isim                : ada bilgi
+            doğum tarihi        : 2012
+            matematik notları   : 70, 70, 80
 
-// kelimeYazdir("merhaba", 2);
+        öğrenci 2: 
+            isim                : yiğit bilgi
+            doğum tarihi        : 2010
+            matematik notları   : 40, 40, 50
 
-// 2- Dikdörtgenin alan ve çevresini hesaplayan fonksiyonu yazınız.
+    2- Öğrencilerinin yaş bilgilerini değişkende tutunuz.
+    3- Öğrencilerinin ders ortalama notunu değişkende saklayınız.
+    4- Öğrencilerinin 50 geçme notuna göre başarı durumlarını değişkende saklayınız.
+*/
 
-function alanCevreHesapla(kisa, uzun) {
-    let alan = kisa * uzun;
-    let cevre = (kisa + uzun) * 2;
+let ogr1_ad = "Ada";
+let ogr1_soyad = "Bilgi";
+let ogr1_dogumTarihi = "2010";
+let ogr1_matematik1 = 70;
+let ogr1_matematik2 = 70;
+let ogr1_matematik3 = 80;
+let ogr1_ortalama = (ogr1_matematik1 + ogr1_matematik2 + ogr1_matematik3) / 3;
+console.log(parseFloat(ogr1_ortalama));
+console.log(ogr1_ortalama >= 50);
 
-    return `alan: ${alan} çevre: ${cevre}`;
-}
+let ogr2_ad = "Yiğit";
+let ogr3_soyad = "Bilgi";
+let ogr2_dogumTarihi = "2012";
+let ogr2_matematik1 = 40;
+let ogr2_matematik2 = 40;
+let ogr2_matematik3 = 50;
+let ogr2_ortalama = (ogr2_matematik1 + ogr2_matematik2 + ogr2_matematik3) / 3;
+console.log(parseFloat(ogr2_ortalama));
+console.log(typeof ogr2_ortalama);
+console.log(ogr2_ortalama >= 50);
 
-let sonuc = alanCevreHesapla(7, 10);
-sonuc = alanCevreHesapla(7, 12);
-// console.log(sonuc);
+let suankiYil = new Date().getFullYear();
 
-// 3- Yazı tura uygulamasını fonksiyon kullanarak yapınız.
-
-function yaziTuraAt() {
-    let random = Math.random(); // 0-1
-
-    if(random < 0.5) {
-        console.log("yazı");
-    } else {
-        console.log("tura");
-    }
-    console.log(random);
-}
-
-// yaziTuraAt();
-
-// 4- Kendisine gönderilen bir sayının tam bölenlerini dizi şeklinde döndüren fonksiyonu yazınız.
-
-function tamBolenler(sayi) {
-    let sayilar = [];
-
-    for(let i=2; i < sayi; i++) {
-        if(sayi % i == 0) {
-            sayilar.push(i);
-        }
-    }
-
-    return sayilar;
-}
+let ogr1_yas = suankiYil - parseInt(ogr1_dogumTarihi);
+let ogr2_yas = suankiYil - parseInt(ogr2_dogumTarihi);
+console.log(ogr2_yas);
 
 
-// console.log(tamBolenler(10));    // 2, 5
-// console.log(tamBolenler(15));    // 3, 5
-// console.log(tamBolenler(35));    // 3, 5
 
-// 5- Değişken sayıda parametre alan toplam isminde bir fonksiyon tanımlayınız.
-
-function toplam() {
-    let sonuc = 0;
-
-    for(let i = 0; i < arguments.length; i++) {
-        sonuc += arguments[i];
-    }
-
-    return sonuc;
-}
-
-console.log(toplam(2, 5));
-console.log(toplam(2, 5, 7));   
-console.log(toplam(2, 5, 7, 10));   
