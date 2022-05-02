@@ -1,47 +1,73 @@
-/* 
-    1- İki öğrencinin aşağıdaki bilgilerini değişkenler içerisinde saklayınız.
+let sayilar = [1,5,7,15,3,25,12,24];
 
-        öğrenci 1: 
-            isim                : ada bilgi
-            doğum tarihi        : 2012
-            matematik notları   : 70, 70, 80
+// 1- sayilar listesindeki her bir elemanın karesini yazdırınız.
 
-        öğrenci 2: 
-            isim                : yiğit bilgi
-            doğum tarihi        : 2010
-            matematik notları   : 40, 40, 50
+// for (let sayi of sayilar) {
+//     console.log(sayi * sayi);
+// }
 
-    2- Öğrencilerinin yaş bilgilerini değişkende tutunuz.
-    3- Öğrencilerinin ders ortalama notunu değişkende saklayınız.
-    4- Öğrencilerinin 50 geçme notuna göre başarı durumlarını değişkende saklayınız.
-*/
+// 2- sayilar listesindeki hangi sayılar 5' in katıdır?
+// for(let i=0; i<sayilar.length; i++) {
+//     if(sayilar[i] % 5 == 0) {
+//         console.log(sayilar[i]);
+//     }
+// }
 
-let ogr1_ad = "Ada";
-let ogr1_soyad = "Bilgi";
-let ogr1_dogumTarihi = "2010";
-let ogr1_matematik1 = 70;
-let ogr1_matematik2 = 70;
-let ogr1_matematik3 = 80;
-let ogr1_ortalama = (ogr1_matematik1 + ogr1_matematik2 + ogr1_matematik3) / 3;
-console.log(parseFloat(ogr1_ortalama));
-console.log(ogr1_ortalama >= 50);
+// 3- sayilar listesindeki çift sayıların toplamını bulunuz.
 
-let ogr2_ad = "Yiğit";
-let ogr3_soyad = "Bilgi";
-let ogr2_dogumTarihi = "2012";
-let ogr2_matematik1 = 40;
-let ogr2_matematik2 = 40;
-let ogr2_matematik3 = 50;
-let ogr2_ortalama = (ogr2_matematik1 + ogr2_matematik2 + ogr2_matematik3) / 3;
-console.log(parseFloat(ogr2_ortalama));
-console.log(typeof ogr2_ortalama);
-console.log(ogr2_ortalama >= 50);
+// let toplam = 0;
+// for(let i in sayilar) {
+//     if (sayilar[i]%2==0) {
+//         toplam += sayilar[i];
+//     }
+// }
+// console.log(toplam);
 
-let suankiYil = new Date().getFullYear();
+let urunler = ["iphone 12","samsung s22","iphone 13","samsung s23","samsung s20"];
 
-let ogr1_yas = suankiYil - parseInt(ogr1_dogumTarihi);
-let ogr2_yas = suankiYil - parseInt(ogr2_dogumTarihi);
-console.log(ogr2_yas);
+// 4- urunler listesindeki tüm ürünleri büyük harf ile yazdırınız.
 
+// for(let urun of urunler) {
+//     console.log(urun.toUpperCase());
+// }
 
+// 5- urunler listesinde samsung geçen kaç ürün vardır?
 
+// let adet = 0;
+
+// for(let urun of urunler) {
+//     if(urun.includes("samsung")) {
+//         adet++;
+//     }
+// }
+
+// console.log(adet);
+
+let ogrenciler = [
+    {"ad":"yiğit", "soyad": "bilgi", "notlar": [60,70,60]},
+    {"ad":"ada", "soyad": "bilgi", "notlar": [80,70,80]},
+    {"ad":"çınar", "soyad": "turan", "notlar": [10,20,60]}
+];
+
+// ogrenciler listesindeki her öğrencinin not ortalaması ve başarı durumlarını yazdırınız.
+
+for(let ogrenci of ogrenciler) {
+    let not_toplam = 0;
+    let ortalama = 0;
+    let adet = 0;
+    for(let not of ogrenci.notlar) {
+        not_toplam += not;
+        adet++;
+    }
+    ortalama = not_toplam / adet;
+
+    console.log(`${ogrenci.ad} ${ogrenci.soyad} isimli öğrencimnin not ortalaması : ${ortalama}.`);
+
+    if(ortalama>=50) {
+        console.log("başarılı.");
+    } else {
+        console.log("başarısız.");
+    }    
+}
+
+// tüm öğrencilerin not ortalaması kaçtır?
