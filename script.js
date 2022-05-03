@@ -1,73 +1,72 @@
-let sayilar = [1,5,7,15,3,25,12,24];
+// 1- Kendisine gönderilen kelimeyi belirtilen kez ekranda yazan fonksiyonu yapınız.
 
-// 1- sayilar listesindeki her bir elemanın karesini yazdırınız.
-
-// for (let sayi of sayilar) {
-//     console.log(sayi * sayi);
-// }
-
-// 2- sayilar listesindeki hangi sayılar 5' in katıdır?
-// for(let i=0; i<sayilar.length; i++) {
-//     if(sayilar[i] % 5 == 0) {
-//         console.log(sayilar[i]);
-//     }
-// }
-
-// 3- sayilar listesindeki çift sayıların toplamını bulunuz.
-
-// let toplam = 0;
-// for(let i in sayilar) {
-//     if (sayilar[i]%2==0) {
-//         toplam += sayilar[i];
-//     }
-// }
-// console.log(toplam);
-
-let urunler = ["iphone 12","samsung s22","iphone 13","samsung s23","samsung s20"];
-
-// 4- urunler listesindeki tüm ürünleri büyük harf ile yazdırınız.
-
-// for(let urun of urunler) {
-//     console.log(urun.toUpperCase());
-// }
-
-// 5- urunler listesinde samsung geçen kaç ürün vardır?
-
-// let adet = 0;
-
-// for(let urun of urunler) {
-//     if(urun.includes("samsung")) {
-//         adet++;
-//     }
-// }
-
-// console.log(adet);
-
-let ogrenciler = [
-    {"ad":"yiğit", "soyad": "bilgi", "notlar": [60,70,60]},
-    {"ad":"ada", "soyad": "bilgi", "notlar": [80,70,80]},
-    {"ad":"çınar", "soyad": "turan", "notlar": [10,20,60]}
-];
-
-// ogrenciler listesindeki her öğrencinin not ortalaması ve başarı durumlarını yazdırınız.
-
-for(let ogrenci of ogrenciler) {
-    let not_toplam = 0;
-    let ortalama = 0;
-    let adet = 0;
-    for(let not of ogrenci.notlar) {
-        not_toplam += not;
-        adet++;
+function kelimeYazdir(kelime, adet) {
+    for (let i=0; i < adet; i++) {
+        console.log(kelime);
     }
-    ortalama = not_toplam / adet;
-
-    console.log(`${ogrenci.ad} ${ogrenci.soyad} isimli öğrencimnin not ortalaması : ${ortalama}.`);
-
-    if(ortalama>=50) {
-        console.log("başarılı.");
-    } else {
-        console.log("başarısız.");
-    }    
 }
 
-// tüm öğrencilerin not ortalaması kaçtır?
+// kelimeYazdir("merhaba", 2);
+
+// 2- Dikdörtgenin alan ve çevresini hesaplayan fonksiyonu yazınız.
+
+function alanCevreHesapla(kisa, uzun) {
+    let alan = kisa * uzun;
+    let cevre = (kisa + uzun) * 2;
+
+    return `alan: ${alan} çevre: ${cevre}`;
+}
+
+let sonuc = alanCevreHesapla(7, 10);
+sonuc = alanCevreHesapla(7, 12);
+// console.log(sonuc);
+
+// 3- Yazı tura uygulamasını fonksiyon kullanarak yapınız.
+
+function yaziTuraAt() {
+    let random = Math.random(); // 0-1
+
+    if(random < 0.5) {
+        console.log("yazı");
+    } else {
+        console.log("tura");
+    }
+    console.log(random);
+}
+
+// yaziTuraAt();
+
+// 4- Kendisine gönderilen bir sayının tam bölenlerini dizi şeklinde döndüren fonksiyonu yazınız.
+
+function tamBolenler(sayi) {
+    let sayilar = [];
+
+    for(let i=2; i < sayi; i++) {
+        if(sayi % i == 0) {
+            sayilar.push(i);
+        }
+    }
+
+    return sayilar;
+}
+
+
+// console.log(tamBolenler(10));    // 2, 5
+// console.log(tamBolenler(15));    // 3, 5
+// console.log(tamBolenler(35));    // 3, 5
+
+// 5- Değişken sayıda parametre alan toplam isminde bir fonksiyon tanımlayınız.
+
+function toplam() {
+    let sonuc = 0;
+
+    for(let i = 0; i < arguments.length; i++) {
+        sonuc += arguments[i];
+    }
+
+    return sonuc;
+}
+
+console.log(toplam(2, 5));
+console.log(toplam(2, 5, 7));   
+console.log(toplam(2, 5, 7, 10));   
