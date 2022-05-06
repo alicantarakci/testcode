@@ -1,10 +1,23 @@
-let vize1 = 10;
-let vize2 = 10;
-let final = 70;
-let ortalama = (((vize1 + vize2) / 2) * 0.4) + (final * 0.6);
-console.log("ortalamanız: " + ortalama);
-if (ortalama >= 50 || final >= 70) {
-    console.log("geçtiniz");
-} else {
-    console.log("kaldınız");
+let url = "https://www.sadikturan.com";
+let kursAdi = "Komple Web Geliştirme Kursu";
+let sonuc;
+sonuc = url.length;
+sonuc = kursAdi.split(" ").length;
+sonuc = url.startsWith("https");
+if (sonuc) {
+    console.log("evet başlıyor");
 }
+
+if (kursAdi.indexOf("Eğitimi") > -1) {
+    console.log("evet var");
+} else {
+    console.log("hayır yok");
+}
+
+kursAdi = kursAdi.toLowerCase();
+kursAdi = kursAdi.replaceAll(" ","-");
+kursAdi = kursAdi.replace("ş","s").replace("ı","i");
+
+sonuc = `${url}/${kursAdi}`;
+
+console.log(sonuc);
