@@ -1,12 +1,12 @@
-concat
-CopywithinTarget
-Copywithinstart
-Copywithinend
-entries
-every
-fill
-find
-findindex
-flat
-foreach
-includes
+concat  x2                 indexof
+CopywithinTarget x2        join
+Copywithinstartx2
+Copywithinendx2
+entriesx2
+everyx2
+fillx2
+findx2
+findindexx2
+flatx2
+foreachx2
+includesx2
