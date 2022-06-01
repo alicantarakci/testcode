@@ -1,0 +1,63 @@
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\bin\Debug\netcoreapp3.1\Student.exe
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\bin\Debug\netcoreapp3.1\Student.deps.json
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\bin\Debug\netcoreapp3.1\Student.runtimeconfig.json
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\bin\Debug\netcoreapp3.1\Student.runtimeconfig.dev.json
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\bin\Debug\netcoreapp3.1\Student.dll
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\bin\Debug\netcoreapp3.1\Student.pdb
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.Form1.resources
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.GenerateResource.cache
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.dll
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.pdb
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 10\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.Form1.resources
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.GenerateResource.cache
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.dll
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.pdb
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\bin\Debug\netcoreapp3.1\Student.exe
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\bin\Debug\netcoreapp3.1\Student.deps.json
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\bin\Debug\netcoreapp3.1\Student.runtimeconfig.json
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\bin\Debug\netcoreapp3.1\Student.runtimeconfig.dev.json
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\bin\Debug\netcoreapp3.1\Student.dll
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\bin\Debug\netcoreapp3.1\Student.pdb
+C:\Users\HP\OneDrive\Documents\Derslerim\Görsel Programlama\Doğuş 2021-2022\Dersler\Hafta 11\Student\Student\Student\obj\Debug\netcoreapp3.1\Student.genruntimeconfig.cache
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\bin\Debug\netcoreapp3.1\Student.exe
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\bin\Debug\netcoreapp3.1\Student.deps.json
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\bin\Debug\netcoreapp3.1\Student.runtimeconfig.json
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\bin\Debug\netcoreapp3.1\Student.runtimeconfig.dev.json
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\bin\Debug\netcoreapp3.1\Student.dll
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\bin\Debug\netcoreapp3.1\Student.pdb
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.AssemblyReference.cache
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\obj\Debug\netcoreapp3.1\Student.Form1.resources
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.GenerateResource.cache
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\obj\Debug\netcoreapp3.1\Student.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\obj\Debug\netcoreapp3.1\Student.AssemblyInfoInputs.cache
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\obj\Debug\netcoreapp3.1\Student.AssemblyInfo.cs
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.CoreCompileInputs.cache
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\obj\Debug\netcoreapp3.1\Student.dll
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\obj\Debug\netcoreapp3.1\Student.pdb
+C:\Users\selim\OneDrive\Masaüstü\Student\Student\obj\Debug\netcoreapp3.1\Student.genruntimeconfig.cache
+C:\Users\Kullanıcı\Desktop\Student\Student\bin\Debug\netcoreapp3.1\Student.exe
+C:\Users\Kullanıcı\Desktop\Student\Student\bin\Debug\netcoreapp3.1\Student.deps.json
+C:\Users\Kullanıcı\Desktop\Student\Student\bin\Debug\netcoreapp3.1\Student.runtimeconfig.json
+C:\Users\Kullanıcı\Desktop\Student\Student\bin\Debug\netcoreapp3.1\Student.runtimeconfig.dev.json
+C:\Users\Kullanıcı\Desktop\Student\Student\bin\Debug\netcoreapp3.1\Student.dll
+C:\Users\Kullanıcı\Desktop\Student\Student\bin\Debug\netcoreapp3.1\Student.pdb
+C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.csprojAssemblyReference.cache
+C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.Form1.resources
+C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.GenerateResource.cache
+C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.AssemblyInfoInputs.cache
+C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.AssemblyInfo.cs
+C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.CoreCompileInputs.cache
+C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.dll
+C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.pdb
+C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.genruntimeconfig.cache
