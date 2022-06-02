@@ -46,14 +46,14 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtDosyaYolu = new System.Windows.Forms.TextBox();
             this.btnRead = new System.Windows.Forms.Button();
-            this.txtEdıtor = new System.Windows.Forms.TextBox();
+            this.lstMetin = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 49);
+            this.label1.Location = new System.Drawing.Point(16, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 15);
             this.label1.TabIndex = 0;
@@ -62,7 +62,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 82);
+            this.label2.Location = new System.Drawing.Point(16, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 15);
             this.label2.TabIndex = 1;
@@ -71,7 +71,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(260, 82);
+            this.label3.Location = new System.Drawing.Point(215, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 15);
             this.label3.TabIndex = 2;
@@ -80,7 +80,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(476, 53);
+            this.label4.Location = new System.Drawing.Point(431, 49);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 15);
             this.label4.TabIndex = 3;
@@ -89,7 +89,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(260, 49);
+            this.label5.Location = new System.Drawing.Point(215, 45);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 15);
             this.label5.TabIndex = 4;
@@ -97,42 +97,42 @@
             // 
             // txtNo
             // 
-            this.txtNo.Location = new System.Drawing.Point(115, 45);
+            this.txtNo.Location = new System.Drawing.Point(70, 41);
             this.txtNo.Name = "txtNo";
             this.txtNo.Size = new System.Drawing.Size(139, 23);
             this.txtNo.TabIndex = 5;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(115, 79);
+            this.txtName.Location = new System.Drawing.Point(70, 75);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(139, 23);
             this.txtName.TabIndex = 6;
             // 
             // txtDepartment
             // 
-            this.txtDepartment.Location = new System.Drawing.Point(329, 45);
+            this.txtDepartment.Location = new System.Drawing.Point(284, 41);
             this.txtDepartment.Name = "txtDepartment";
             this.txtDepartment.Size = new System.Drawing.Size(141, 23);
             this.txtDepartment.TabIndex = 7;
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(329, 79);
+            this.txtSurname.Location = new System.Drawing.Point(284, 75);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(141, 23);
             this.txtSurname.TabIndex = 8;
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(506, 46);
+            this.txtAge.Location = new System.Drawing.Point(464, 46);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(86, 23);
             this.txtAge.TabIndex = 9;
             // 
             // btnRecord
             // 
-            this.btnRecord.Location = new System.Drawing.Point(119, 120);
+            this.btnRecord.Location = new System.Drawing.Point(16, 120);
             this.btnRecord.Name = "btnRecord";
             this.btnRecord.Size = new System.Drawing.Size(75, 23);
             this.btnRecord.TabIndex = 10;
@@ -161,7 +161,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(200, 120);
+            this.btnSearch.Location = new System.Drawing.Point(97, 120);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 13;
@@ -171,7 +171,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(281, 120);
+            this.btnDelete.Location = new System.Drawing.Point(178, 120);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 14;
@@ -192,15 +192,15 @@
             // 
             // txtDosyaYolu
             // 
-            this.txtDosyaYolu.Location = new System.Drawing.Point(437, 158);
+            this.txtDosyaYolu.Location = new System.Drawing.Point(340, 120);
             this.txtDosyaYolu.Multiline = true;
             this.txtDosyaYolu.Name = "txtDosyaYolu";
-            this.txtDosyaYolu.Size = new System.Drawing.Size(237, 280);
+            this.txtDosyaYolu.Size = new System.Drawing.Size(334, 23);
             this.txtDosyaYolu.TabIndex = 16;
             // 
             // btnRead
             // 
-            this.btnRead.Location = new System.Drawing.Point(374, 120);
+            this.btnRead.Location = new System.Drawing.Point(259, 120);
             this.btnRead.Name = "btnRead";
             this.btnRead.Size = new System.Drawing.Size(75, 23);
             this.btnRead.TabIndex = 17;
@@ -208,19 +208,21 @@
             this.btnRead.UseVisualStyleBackColor = true;
             this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
             // 
-            // txtEdıtor
+            // lstMetin
             // 
-            this.txtEdıtor.Location = new System.Drawing.Point(455, 120);
-            this.txtEdıtor.Name = "txtEdıtor";
-            this.txtEdıtor.Size = new System.Drawing.Size(219, 23);
-            this.txtEdıtor.TabIndex = 18;
+            this.lstMetin.FormattingEnabled = true;
+            this.lstMetin.ItemHeight = 15;
+            this.lstMetin.Location = new System.Drawing.Point(446, 158);
+            this.lstMetin.Name = "lstMetin";
+            this.lstMetin.Size = new System.Drawing.Size(239, 274);
+            this.lstMetin.TabIndex = 18;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(686, 450);
-            this.Controls.Add(this.txtEdıtor);
+            this.Controls.Add(this.lstMetin);
             this.Controls.Add(this.btnRead);
             this.Controls.Add(this.txtDosyaYolu);
             this.Controls.Add(this.dataGridView1);
@@ -268,6 +270,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtDosyaYolu;
         private System.Windows.Forms.Button btnRead;
-        private System.Windows.Forms.TextBox txtEdıtor;
+        private System.Windows.Forms.ListBox lstMetin;
     }
 }

@@ -52,9 +52,10 @@ C:\Users\Kullanıcı\Desktop\Student\Student\bin\Debug\netcoreapp3.1\Student.run
 C:\Users\Kullanıcı\Desktop\Student\Student\bin\Debug\netcoreapp3.1\Student.runtimeconfig.dev.json
 C:\Users\Kullanıcı\Desktop\Student\Student\bin\Debug\netcoreapp3.1\Student.dll
 C:\Users\Kullanıcı\Desktop\Student\Student\bin\Debug\netcoreapp3.1\Student.pdb
-C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.csprojAssemblyReference.cache
+C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.AssemblyReference.cache
 C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.Form1.resources
 C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.GenerateResource.cache
+C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.AssemblyInfoInputs.cache
 C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.AssemblyInfo.cs
 C:\Users\Kullanıcı\Desktop\Student\Student\obj\Debug\netcoreapp3.1\Student.csproj.CoreCompileInputs.cache

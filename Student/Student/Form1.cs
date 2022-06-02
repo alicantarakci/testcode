@@ -23,25 +23,27 @@ namespace Student
         }
         DataTable tablo = new DataTable();
         private void btnRecord_Click(object sender, EventArgs e)
-        {  
-            
-
-
+        {
                 Student tmpStudent = new Student();
                 tmpStudent.Age = Convert.ToInt32(txtAge.Text);
                 tmpStudent.Name = txtName.Text;
                 tmpStudent.Surname = txtSurname.Text;
                 tmpStudent.Department = txtDepartment.Text;
                 tmpStudent.No = txtNo.Text;
+                string dosya_adresi = @"C:\Users\Kullanıcı\Desktop\ödev\student.txt";
 
             if (Students.FindIndex(a => a.No == tmpStudent.No) == -1)
             {
                 Students.Add(tmpStudent);
                 tablo.Rows.Add(txtNo.Text, txtName.Text, txtSurname.Text, txtDepartment.Text, txtAge.Text);
                 dataGridView1.DataSource = tablo;
-                File.WriteAllText(@"C:\Users\Kullanıcı\Desktop\ders\odev.txt", txtNo.Text + "-" + txtName.Text + "-" + txtSurname.Text + "-" + txtDepartment.Text + "-" + txtAge.Text);
-                txtDosyaYolu.Text = @"C:\Users\Kullanıcı\Desktop\ders\odev.txt";
-
+                FileStream fs = new FileStream(Path.Combine(@"C:\\Users\\Kullanıcı\\Desktop\\","student.txt"), FileMode.OpenOrCreate, FileAccess.ReadWrite);
+                StreamWriter sw = new StreamWriter(fs);
+                sw.WriteLine(txtNo.Text+"-"+txtName.Text+"-"+txtSurname.Text+"-"+txtDepartment.Text+"-"+txtAge.Text);
+                txtDosyaYolu.Text = @"C:\\Users\\Kullanıcı\\Desktop\\student.txt";
+                sw.Flush();
+                sw.Close();
+                fs.Close();
             }
 
 
@@ -94,7 +96,14 @@ namespace Student
 
         private void btnRead_Click(object sender, EventArgs e)
         {
-            
+            StreamReader streamReader = File.OpenText(@"C:\Users\Kullanıcı\Desktop\ödev\student.txt");
+            string yazi;
+            while ((yazi = streamReader.ReadLine()) != null)
+            {
+                
+                lstMetin.Items.Add(yazi);
+            }
+            streamReader.Close();
         }
     }
 }
