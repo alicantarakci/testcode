@@ -1,0 +1,135 @@
+let computers ={
+    notebook:[
+        {name:"Asus",model:"blabla2020",color:"black"},
+        {name:"Casper",model:"Excalibur",color:"yellow"},
+        {name:"GameGaraj",model:"blaster7tn",color:"red"},
+        {name:"Apple",model:"macbook",color:"white"},
+        {name:"Monster",model:"abraa5",color:"gray"},
+        {name:"Dell",model:"dellgaming",color:"blue"}
+    ],
+    computerAccessuars:[
+        {name:"mause",model:"Razer",color:"orange"},
+        {name:"headphone",model:"rampage",color:"green"},
+        {name:"keyboard",model:"steelseries",color:"orange"}
+    ]
+    
+};
+let data={
+    kisiler:[
+        {name:"Alican",surname:"Tarakci",age:"22"},
+        {name:"Tolga",surname:"Cinar",age:"42"},
+        {name:"Arda",surname:"Capar",age:"19"}
+    ],
+};
+let phones = {
+    iphone:[
+        {model:"x",color:"red",disk:"128gb"},
+        {model:"11",color:"black",disk:"64gb"},
+        {model:"12",color:"blue",disk:"32gb"},
+        {model:"13",color:"red",disk:"264gb"}
+    ],
+    samsung:[
+        {model:"s20",color:"black",disk:"64gb"},
+        {model:"s21",color:"blue",disk:"128gb"},
+        {model:"s22",color:"white",disk:"64gb"}
+    ],
+    xiomi:[
+        {model:"pocox3pro",color:"gray",disk:"128gb"},
+        {model:"redmi",color:"red",disk:"32gb"},
+        {model:"note9",color:"black",disk:"256gb"}
+    ]
+};
+let cameras = {
+    sony:[
+        {model:"bla",mood:"ip",color:"white"},
+        {model:"blabla",mood:"cctv",color:"black"}
+    ],
+    samsung: [
+        {model:"blablabla",mood:"iptv",color:"orange"},
+        {model:"bla",mood:"iptvcctv",color:"gray"}
+    ],
+};
+let cars = {
+    audi:[
+        {name:"a5",model:"coupe",motors:"2.0",color:"red"},
+        {name:"a4",model:"sedan",motors:"1.6",color:"black"},
+        {name:"a3",model:"hatchback",motors:"1.5",color:"orange"}
+    ],
+    toyota:[
+        {name:"corolla",model:"sedan",motors:"1.6",color:"white"},
+        {name:"yaris",model:"hatchback",motors:"1.4",color:"yellow"},
+        {name:"supra",model:"sedan",motors:"8.0",color:"OrangeAndBlack"}
+    ],
+    opel:[
+        {name:"astra",model:"hatchback",motors:"1.6",color:"white"},
+        {name:"corsa",model:"hatchback",motors:"1.8",color:"red"},
+        {name:"mokka",model:"suv",motors:"1.5",color:"gray"}
+    ]
+};
+console.log(phones.xiomi);
+console.log('\n');
+var x = 1;
+while  (x < 10){
+    console.log(x);
+    x++;
+}
+console.log('\n');
+var y = 1 ;
+do {
+    console.log(y);
+    y++;
+}
+ while (y > 10);
+
+var t=1;
+while (t < 10){
+    console.log(t);
+    t++;
+}
+console.log('\n');
+for ( var y = 1; y < 10; y++){
+    console.log(y);
+}
+console.log('\n');
+for ( var s = 1; s < 10; s++){
+    if (s==5){
+        break;
+    }
+    console.log(s);
+}
+console.log('\n');
+for(var i=1;i<=10;i++)
+	{
+		console.log("www.tarakcii.com");
+	}
+console.log('\n');
+for (var i=1;i<=50;i++)
+	{
+		if(i%2==0)
+			{
+				console.log(i);
+			}
+	}
+console.log('\n');
+for (var i=1;i<=100;i++)
+	{
+		if(i%3==0 && i%5==0)
+			{
+				console.log(i);
+			}
+	}
+console.log('\n');
+//var i=0;
+//do
+//{
+//      console.log((i+1) + "Merhaba");
+//      i++;
+//while (i<20)
+//};
+for (var q=1;q<=100;q++)
+	{
+		if(q%9==0 && i%15==0)
+			{
+				console.log(i);
+			}
+	}
